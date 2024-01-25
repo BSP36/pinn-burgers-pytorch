@@ -31,13 +31,13 @@ def solve_burgers(
         num_epoch: int,
     ):
     """
-    boundary condition for x = x_max
+    boundary condition at x = x_max
     """
     xt_max = torch.rand(num_bc_max, 2) * t_max  # x, t
     xt_max[:, 0] = x_max  # x
     u_max = torch.zeros(num_bc_max)
     """
-    boundary condition for x = x_min
+    boundary condition at x = x_min
     """
     xt_min = torch.rand(num_bc_min, 2) * t_max
     xt_min[:, 0] = x_min
@@ -105,12 +105,4 @@ if __name__ == "__main__":
     )
 
     show_image(model=model, x_max=1.0, x_min=-1.0, t_max=1.0)
-
-
-    #予測結果の可視化
-
-    
-
-    
-
     

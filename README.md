@@ -64,7 +64,7 @@ burgers-equation-pinn/
 ├── model.py              # Defines the neural network architecture
 ├── main.py               # Main script to solve the Burgers' equation
 ├── README.md             # Project documentation
-└── requirements.txt      # List of dependencies
+└── sample.pdf      # Example
 ```
 
 ## References
